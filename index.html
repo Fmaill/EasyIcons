@@ -5,61 +5,81 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Easy Icons</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{font-family:Arial,Helvetica,sans-serif;color:white;position:relative;min-height:100vh;}
-body::before{content:"";position:fixed;inset:0;background:linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72)),url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExenk2Zmx1dzVzMmlnNnNyY2tlZ3EzN2Q3Ymx1M253dmxtdmR0dzlzdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LTSh3jYtZlH8ar3fGm/giphy.gif");background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed;z-index:-2;}
-header{max-width:950px;margin:auto;padding:25px;display:flex;justify-content:space-between;align-items:center;}
-.logo{font-size:26px;font-weight:bold;}
-nav a{color:#d5d5d5;text-decoration:none;margin-left:20px;transition:.3s;}
-nav a:hover{color:white;}
-main{max-width:950px;margin:auto;padding:40px 25px 80px;}
-.hero{padding:90px 0;}
-.hero h1{font-size:70px;margin-bottom:15px;}
-.hero p{color:#c7c7c7;max-width:650px;font-size:18px;line-height:1.7;}
-.buttons{margin-top:35px;}
-.button{position:relative;display:inline-block;padding:14px 28px;margin-right:14px;text-decoration:none;font-weight:bold;border-radius:10px;overflow:hidden;color:#111;background:white;border:2px solid white;transition:.35s ease;}
-.button::before{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;background:rgba(255,255,255,.6);transform:skewX(-25deg);transition:.6s;}
-.button:hover::before{left:160%;}
-.button:hover{transform:translateY(-5px) scale(1.05);box-shadow:0 0 20px rgba(255,255,255,.45);}
-.button:active{transform:scale(.97);}
-section{margin-top:60px;}
-.card{background:rgba(20,20,20,.65);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:25px;margin-top:15px;}
-.card h2{margin-bottom:15px;}
-.card p,.card li{color:#d3d3d3;}
-ul,ol{padding-left:22px;}
-li{margin:8px 0;}
-.version{display:inline-block;background:white;color:#111;padding:7px 13px;border-radius:6px;margin-bottom:15px;font-weight:bold;}
-.ad{margin:70px 0;height:120px;border:2px dashed rgba(255,255,255,.2);border-radius:12px;display:flex;justify-content:center;align-items:center;color:#bcbcbc;background:rgba(0,0,0,.35);}
-footer{text-align:center;padding:35px;color:#999;}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#fff;min-height:100vh;position:relative}
+body::before{
+content:"";position:fixed;inset:0;
+background:
+linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72)),
+url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExenk2Zmx1dzVzMmlnNnNyY2tlZ3EzN2Q3Ymx1M253dmxtdmR0dzlzdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LTSh3jYtZlH8ar3fGm/giphy.gif");
+background-size:cover;background-position:center;background-attachment:fixed;z-index:-1}
+header{max-width:950px;margin:auto;padding:25px;display:flex;justify-content:space-between}
+nav a{color:#ddd;text-decoration:none;margin-left:20px}
+main{max-width:950px;margin:auto;padding:40px 25px}
+.hero{padding:90px 0}
+.hero h1{font-size:70px}
+.hero p{margin-top:15px;color:#ccc;max-width:650px}
+.button{display:inline-block;margin-top:25px;margin-right:12px;padding:14px 28px;background:#fff;color:#111;text-decoration:none;border-radius:10px;font-weight:bold;transition:.3s}
+.button:hover{transform:translateY(-5px) scale(1.05);box-shadow:0 0 20px rgba(255,255,255,.4)}
+.card{margin-top:50px;padding:25px;background:rgba(20,20,20,.65);backdrop-filter:blur(10px);border-radius:12px}
+.version{display:inline-block;background:#fff;color:#111;padding:6px 12px;border-radius:6px;font-weight:bold}
+footer{text-align:center;padding:35px;color:#999}
 </style>
 </head>
 <body>
 <header>
-<div class="logo">Easy Icons</div>
+<div><b>Easy Icons</b></div>
 <nav>
 <a href="#about">About</a>
 <a href="#install">Install</a>
 <a href="#download">Download</a>
-<a href="#">GitHub</a>
 </nav>
 </header>
+
 <main>
 <div class="hero">
 <h1>Easy Icons</h1>
-<p>Unlock specific Geometry Dash icons instantly with this lightweight Geode mod. Fast, simple and easy to use.</p>
-<div class="buttons">
+<p>Unlock specific Geometry Dash icons instantly with this lightweight Geode mod.</p>
+
 <a class="button" href="fmaill.utilities.geode%204" download>Download</a>
 <a class="button" href="#">GitHub</a>
 </div>
+
+<div class="card" id="about">
+<h2>About</h2>
+<p>Easy Icons lets you unlock specific Geometry Dash icons quickly and easily.</p>
 </div>
-<section id="about"><div class="card"><h2>About</h2><p>Easy Icons is a lightweight Geode mod that lets you unlock specific Geometry Dash icons quickly and easily. Simply choose the icons you want and enjoy a faster customization experience.</p></div></section>
-<section><div class="card"><h2>Requirements</h2><ul><li>Geometry Dash 2.207+</li><li>Latest version of Geode</li><li>Compatible with all Geode-supported platforms</li></ul></div></section>
-<section id="install"><div class="card"><h2>Installation</h2><ol><li>Download the latest release.</li><li>Open Geode.</li><li>Install the mod.</li><li>Restart the game.</li></ol></div></section>
-<section id="download"><div class="card"><h2>Latest Release</h2><div class="version">v1.0.0</div><p>Download the latest version of Easy Icons.</p><br>
+
+<div class="card">
+<h2>Requirements</h2>
+<ul>
+<li>Geometry Dash 2.207+</li>
+<li>Latest Geode version</li>
+<li>Windows</li>
+<li>macOS</li>
+<li>Linux</li>
+<li>Android</li>
+</ul>
+</div>
+
+<div class="card" id="install">
+<h2>Installation</h2>
+<ol>
+<li>Download the mod.</li>
+<li>Open Geode.</li>
+<li>Install the .geode file.</li>
+<li>Restart the game.</li>
+</ol>
+</div>
+
+<div class="card" id="download">
+<h2>Latest Release</h2>
+<div class="version">v1.0.0</div>
+<p>Download the latest version of Easy Icons.</p><br>
 <a class="button" href="fmaill.utilities.geode%204" download>Download</a>
-</div></section>
-<div class="ad">Google AdSense</div>
+</div>
+
 </main>
 <footer>© 2026 Easy Icons</footer>
 </body>
